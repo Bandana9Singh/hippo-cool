@@ -1,0 +1,5 @@
+group: 
+  name: hippo-cool
+project: hippo-cool
+module:
+  name: hippo-cool-repository-data-webfiles

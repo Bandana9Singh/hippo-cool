@@ -1,0 +1,7 @@
+group: 
+  name: hippo-cool
+  after: hippo-cms
+project: hippo-cool
+module: 
+  name: hippo-cool-repository-data-development
+  after: hippo-cool-repository-data-application

@@ -1,0 +1,6 @@
+site: hippo-cool
+group: hippo-cool
+project: hippo-cool
+module:
+  name: hippo-cool-repository-data-site-development
+  after: hippo-cool-repository-data-site

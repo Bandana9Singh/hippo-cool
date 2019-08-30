@@ -1,0 +1,4 @@
+definitions:
+  config:
+    /hst:hst/hst:configurations/hippocool/hst:sitemap:
+      jcr:primaryType: hst:sitemap

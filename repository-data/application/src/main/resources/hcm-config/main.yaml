@@ -1,0 +1,5 @@
+definitions:
+  namespace:
+    hippocool:
+      uri: http://www.hippocool.com/hippocool/nt/1.0
+      cnd: namespaces/hippo-cool.cnd
