@@ -1,6 +1,8 @@
 /content/documents/hippocool:
+  .meta:order-before: administration
   jcr:primaryType: hippostd:folder
   jcr:mixinTypes: ['hippo:named', 'hippotranslation:translated', 'mix:referenceable']
+  jcr:uuid: 84c59c1f-f971-46b9-abcf-ff11c4dfccd3
   hippo:name: Hippo Cool
   hippostd:foldertype: [new-translated-folder, new-document]
   hippotranslation:id: 996bcac5-86cf-49b5-a7a3-16a74863e814

@@ -1,0 +1,16 @@
+definitions:
+  config:
+    /hst:hst/hst:configurations/hst:default/hst:catalog/essentials-catalog:
+      jcr:primaryType: hst:containeritempackage
+      /simplecontent:
+        jcr:primaryType: hst:containeritemcomponent
+        hst:componentclassname: org.onehippo.cms7.essentials.components.EssentialsDocumentComponent
+        hst:iconpath: images/essentials/catalog-component-icons/simple-content.svg
+        hst:label: Simple Content
+        hst:template: contentpage-main
+      /titlecomponent:
+        jcr:primaryType: hst:containeritemcomponent
+        hst:componentclassname: org.example.components.Title
+        hst:iconpath: images/essentials/catalog-component-icons/simple-content.svg
+        hst:label: Title
+        hst:template: title-component

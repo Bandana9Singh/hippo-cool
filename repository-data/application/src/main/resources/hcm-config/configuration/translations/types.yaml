@@ -1,0 +1,32 @@
+definitions:
+  config:
+    /hippo:configuration/hippo:translations/hippo:types/hippocool:contentdocument:
+      jcr:primaryType: hipposys:resourcebundles
+      /en:
+        jcr:primaryType: hipposys:resourcebundle
+        hippocool:content: Content
+        hippocool:introduction: Introduction
+        hippocool:publicationdate: Publication date
+        hippocool:title: Title
+        jcr:name: Simple Document
+      /nl:
+        jcr:primaryType: hipposys:resourcebundle
+        hippocool:content: Inhoud
+        hippocool:introduction: Introductie
+        hippocool:publicationdate: Publicatiedatum
+        hippocool:title: Titel
+        jcr:name: Eenvoudig Document
+      /fr:
+        jcr:primaryType: hipposys:resourcebundle
+        hippocool:content: Contenu
+        hippocool:introduction: Introduction
+        hippocool:publicationdate: Date de publication
+        hippocool:title: Titre
+        jcr:name: Document simple
+      /de:
+        jcr:primaryType: hipposys:resourcebundle
+        hippocool:content: Inhalt
+        hippocool:introduction: Einführung
+        hippocool:publicationdate: Publikationsdatum
+        hippocool:title: Titel
+        jcr:name: Einfaches Dokument

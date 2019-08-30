@@ -1,0 +1,42 @@
+30-Aug-2019 16:58:51.939 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/bandana.singh/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+30-Aug-2019 16:58:52.129 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+30-Aug-2019 16:58:52.147 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["ajp-nio-8009"]
+30-Aug-2019 16:58:52.149 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [327] milliseconds
+30-Aug-2019 16:58:52.174 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+30-Aug-2019 16:58:52.174 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/9.0.20]
+30-Aug-2019 16:58:52.186 INFO [main] org.apache.catalina.startup.HostConfig.deployDescriptor Deploying deployment descriptor [/Users/bandana.singh/Documents/hippo-cool/target/tomcat9x/conf/Catalina/localhost/site.xml]
+30-Aug-2019 16:58:59.597 INFO [main] org.apache.catalina.startup.HostConfig.deployDescriptor Deployment of deployment descriptor [/Users/bandana.singh/Documents/hippo-cool/target/tomcat9x/conf/Catalina/localhost/site.xml] has finished in [7,411] ms
+30-Aug-2019 16:58:59.598 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/Users/bandana.singh/Documents/hippo-cool/target/tomcat9x/webapps/cargocpc.war]
+30-Aug-2019 16:58:59.654 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/Users/bandana.singh/Documents/hippo-cool/target/tomcat9x/webapps/cargocpc.war] has finished in [56] ms
+30-Aug-2019 16:58:59.654 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/bandana.singh/Documents/hippo-cool/target/tomcat9x/webapps/manager]
+30-Aug-2019 16:58:59.680 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/bandana.singh/Documents/hippo-cool/target/tomcat9x/webapps/manager] has finished in [25] ms
+30-Aug-2019 16:58:59.680 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/bandana.singh/Documents/hippo-cool/target/tomcat9x/webapps/cms]
+30-Aug-2019 16:59:32.035 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/bandana.singh/Documents/hippo-cool/target/tomcat9x/webapps/cms] has finished in [32,355] ms
+30-Aug-2019 16:59:32.035 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/bandana.singh/Documents/hippo-cool/target/tomcat9x/webapps/host-manager]
+30-Aug-2019 16:59:32.051 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/bandana.singh/Documents/hippo-cool/target/tomcat9x/webapps/host-manager] has finished in [16] ms
+30-Aug-2019 16:59:32.051 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/bandana.singh/Documents/hippo-cool/target/tomcat9x/webapps/essentials]
+30-Aug-2019 16:59:34.791 INFO [main] org.apache.cxf.endpoint.ServerImpl.initDestination Setting the server's publish address to be /
+30-Aug-2019 16:59:35.012 INFO [main] org.apache.cxf.endpoint.ServerImpl.initDestination Setting the server's publish address to be /system
+30-Aug-2019 16:59:35.018 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/bandana.singh/Documents/hippo-cool/target/tomcat9x/webapps/essentials] has finished in [2,967] ms
+30-Aug-2019 16:59:35.021 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+30-Aug-2019 16:59:35.027 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["ajp-nio-8009"]
+30-Aug-2019 16:59:35.028 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [42,878] milliseconds
+30-Aug-2019 16:59:35.669 INFO [http-nio-8080-exec-1] org.apache.cxf.endpoint.ServerImpl.initDestination Setting the server's publish address to be /dynamic
+30-Aug-2019 19:39:09.889 INFO [Thread-20] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+30-Aug-2019 19:39:09.897 INFO [Thread-20] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["ajp-nio-8009"]
+30-Aug-2019 19:39:09.903 INFO [Thread-20] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+30-Aug-2019 19:39:10.308 WARNING [Thread-20] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc The web application [cms] registered the JDBC driver [org.h2.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+30-Aug-2019 19:39:10.309 WARNING [Thread-20] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [cms] appears to have started a thread named [pool-7-thread-1] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:215)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2078)
+ java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1093)
+ java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:809)
+ java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1074)
+ java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1134)
+ java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+ java.lang.Thread.run(Thread.java:748)
+30-Aug-2019 19:39:10.411 INFO [Thread-20] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+30-Aug-2019 19:39:10.412 INFO [Thread-20] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["ajp-nio-8009"]
+30-Aug-2019 19:39:10.414 INFO [Thread-20] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+30-Aug-2019 19:39:10.414 INFO [Thread-20] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["ajp-nio-8009"]
