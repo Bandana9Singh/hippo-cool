@@ -1,5 +1,10 @@
 <#include "../include/imports.ftl">
 
-<#if document??>
-  <h1>${document.title}</h1>
+<#if cparam??> 
+	<#if cparam.title??>
+		<h4>${cparam.title}</h4>
+	</#if>
+	<#if cparam.pageNumber??>
+		<p>Page number: ${cparam.pageNumber}</p>
+	</#if>
 </#if>
