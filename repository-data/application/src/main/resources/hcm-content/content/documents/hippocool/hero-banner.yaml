@@ -1,0 +1,105 @@
+/content/documents/hippocool/hero-banner:
+  jcr:primaryType: hippostd:folder
+  jcr:mixinTypes: ['hippo:named', 'hippotranslation:translated', 'mix:versionable']
+  jcr:uuid: 9283c60f-b65b-4178-a04e-bf3db3a0f61c
+  hippo:name: Hero Banner
+  hippostd:foldertype: [new-translated-folder, new-document]
+  hippotranslation:id: 8a444871-2bf0-43d7-9c79-c8babbd29bf1
+  hippotranslation:locale: en
+  /banner1:
+    jcr:primaryType: hippo:handle
+    jcr:mixinTypes: ['hippo:named', 'hippo:versionInfo', 'mix:referenceable']
+    jcr:uuid: dfb94af8-3692-4294-aa5c-505f666da4ba
+    hippo:name: Banner1
+    hippo:versionHistory: a5a170ad-0a08-4036-af12-8858bfb9d5f2
+    /banner1[1]:
+      jcr:primaryType: hippocool:herobanner
+      jcr:mixinTypes: ['mix:referenceable']
+      jcr:uuid: 00c4dfc0-f078-4960-b664-02cbb953a035
+      hippo:availability: []
+      hippocool:content: <p><strong>Lorem Ipsum</strong>&nbsp;is simply dummy text
+        of the printing and typesetting industry. Lorem Ipsum has been the industry's
+        standard dummy text ever since the 1500s, when an unknown printer took a galley
+        of type and scrambled it to make a type specimen book. It has survived not
+        only five centuries, but also the leap into electronic typesetting, remaining
+        essentially unchanged. It was popularised in the 1960s with the release of
+        Letraset sheets containing Lorem Ipsum passages, and more recently with desktop
+        publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+      hippocool:title: I am Lorem Ipsum
+      hippostd:state: draft
+      hippostdpubwf:createdBy: admin
+      hippostdpubwf:creationDate: 2019-09-13T15:21:18.421+05:30
+      hippostdpubwf:lastModificationDate: 2019-09-13T15:21:18.421+05:30
+      hippostdpubwf:lastModifiedBy: admin
+      hippotranslation:id: 2eeef0f4-57b8-4bc2-8b81-4968fff5a90b
+      hippotranslation:locale: en
+      /hippocool:image:
+        jcr:primaryType: hippogallerypicker:imagelink
+        hippo:docbase: e9fd6dc5-d800-4f96-8f5a-c3ca33e7ccfe
+        hippo:facets: []
+        hippo:modes: []
+        hippo:values: []
+      /hippocool:link:
+        jcr:primaryType: hippo:mirror
+        hippo:docbase: cafebabe-cafe-babe-cafe-babecafebabe
+    /banner1[2]:
+      jcr:primaryType: hippocool:herobanner
+      jcr:mixinTypes: ['mix:referenceable', 'mix:versionable']
+      jcr:uuid: 72f39354-4641-44f7-825b-364dbcd2da32
+      hippo:availability: [preview]
+      hippocool:content: <p><strong>Lorem Ipsum</strong>&nbsp;is simply dummy text
+        of the printing and typesetting industry. Lorem Ipsum has been the industry's
+        standard dummy text ever since the 1500s, when an unknown printer took a galley
+        of type and scrambled it to make a type specimen book. It has survived not
+        only five centuries, but also the leap into electronic typesetting, remaining
+        essentially unchanged. It was popularised in the 1960s with the release of
+        Letraset sheets containing Lorem Ipsum passages, and more recently with desktop
+        publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+      hippocool:title: I am Lorem Ipsum
+      hippostd:state: unpublished
+      hippostdpubwf:createdBy: admin
+      hippostdpubwf:creationDate: 2019-09-13T15:21:18.421+05:30
+      hippostdpubwf:lastModificationDate: 2019-09-13T15:23:03.362+05:30
+      hippostdpubwf:lastModifiedBy: admin
+      hippotranslation:id: 2eeef0f4-57b8-4bc2-8b81-4968fff5a90b
+      hippotranslation:locale: en
+      /hippocool:image:
+        jcr:primaryType: hippogallerypicker:imagelink
+        hippo:docbase: e9fd6dc5-d800-4f96-8f5a-c3ca33e7ccfe
+        hippo:facets: []
+        hippo:modes: []
+        hippo:values: []
+      /hippocool:link:
+        jcr:primaryType: hippo:mirror
+        hippo:docbase: cafebabe-cafe-babe-cafe-babecafebabe
+    /banner1[3]:
+      jcr:primaryType: hippocool:herobanner
+      jcr:mixinTypes: ['mix:referenceable']
+      jcr:uuid: a8d6f8ff-bf6b-4dbe-af91-1c406859fe65
+      hippo:availability: [live]
+      hippocool:content: <p><strong>Lorem Ipsum</strong>&nbsp;is simply dummy text
+        of the printing and typesetting industry. Lorem Ipsum has been the industry's
+        standard dummy text ever since the 1500s, when an unknown printer took a galley
+        of type and scrambled it to make a type specimen book. It has survived not
+        only five centuries, but also the leap into electronic typesetting, remaining
+        essentially unchanged. It was popularised in the 1960s with the release of
+        Letraset sheets containing Lorem Ipsum passages, and more recently with desktop
+        publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+      hippocool:title: I am Lorem Ipsum
+      hippostd:state: published
+      hippostdpubwf:createdBy: admin
+      hippostdpubwf:creationDate: 2019-09-13T15:21:18.421+05:30
+      hippostdpubwf:lastModificationDate: 2019-09-13T15:23:03.362+05:30
+      hippostdpubwf:lastModifiedBy: admin
+      hippostdpubwf:publicationDate: 2019-09-13T15:23:06.924+05:30
+      hippotranslation:id: 2eeef0f4-57b8-4bc2-8b81-4968fff5a90b
+      hippotranslation:locale: en
+      /hippocool:image:
+        jcr:primaryType: hippogallerypicker:imagelink
+        hippo:docbase: e9fd6dc5-d800-4f96-8f5a-c3ca33e7ccfe
+        hippo:facets: []
+        hippo:modes: []
+        hippo:values: []
+      /hippocool:link:
+        jcr:primaryType: hippo:mirror
+        hippo:docbase: cafebabe-cafe-babe-cafe-babecafebabe

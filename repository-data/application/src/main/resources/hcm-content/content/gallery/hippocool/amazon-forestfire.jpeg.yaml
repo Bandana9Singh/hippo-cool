@@ -1,0 +1,28 @@
+/content/gallery/hippocool/amazon-forestfire.jpeg:
+  jcr:primaryType: hippo:handle
+  jcr:mixinTypes: ['hippo:named', 'mix:referenceable']
+  jcr:uuid: e9fd6dc5-d800-4f96-8f5a-c3ca33e7ccfe
+  hippo:name: amazon forestfire.jpeg
+  /amazon-forestfire.jpeg:
+    jcr:primaryType: hippogallery:imageset
+    hippo:availability: [live, preview]
+    hippogallery:filename: amazon forestfire.jpeg
+    /hippogallery:thumbnail:
+      jcr:primaryType: hippogallery:image
+      hippo:filename: amazon forestfire.jpeg
+      hippogallery:height: 39
+      hippogallery:width: 60
+      jcr:data:
+        type: binary
+        resource: /content/gallery/hippocool/amazon-forestfire.jpeg/amazon-forestfire_thumbnail.jpeg
+      jcr:lastModified: 2019-09-13T15:22:52.908+05:30
+      jcr:mimeType: image/jpeg
+    /hippogallery:original:
+      jcr:primaryType: hippogallery:image
+      hippogallery:height: 183
+      hippogallery:width: 275
+      jcr:data:
+        type: binary
+        resource: /content/gallery/hippocool/amazon-forestfire.jpeg/amazon-forestfire_original.jpeg
+      jcr:lastModified: 2019-09-13T15:22:52.908+05:30
+      jcr:mimeType: image/jpeg

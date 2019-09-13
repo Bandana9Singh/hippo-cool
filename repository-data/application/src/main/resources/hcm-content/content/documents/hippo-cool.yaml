@@ -2,7 +2,7 @@
   .meta:order-before: administration
   jcr:primaryType: hippostd:folder
   jcr:mixinTypes: ['hippo:named', 'hippotranslation:translated', 'mix:referenceable']
-  jcr:uuid: e44002df-078d-4791-b650-302dedbd9251
+  jcr:uuid: 5e39e1f2-9195-4629-b623-39206b5ec9e6
   hippo:name: Hippo Cool
   hippostd:foldertype: [new-translated-folder, new-document]
   hippotranslation:id: 996bcac5-86cf-49b5-a7a3-16a74863e814

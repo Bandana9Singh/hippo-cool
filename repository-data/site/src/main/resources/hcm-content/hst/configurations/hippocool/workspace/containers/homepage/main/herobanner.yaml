@@ -1,0 +1,6 @@
+/hst:hst/hst:configurations/hippocool/hst:workspace/hst:containers/homepage/main/herobanner:
+  jcr:primaryType: hst:containeritemcomponent
+  hst:componentclassname: org.example.components.HeroBanner
+  hst:iconpath: images/essentials/catalog-component-icons/simple-content.svg
+  hst:label: Hero banner
+  hst:template: hero-banner

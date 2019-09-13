@@ -1,7 +1,7 @@
 /content/gallery/hippocool:
   jcr:primaryType: hippogallery:stdImageGallery
   jcr:mixinTypes: ['hippo:named', 'mix:referenceable']
+  jcr:uuid: 552ddf15-e328-4214-9c27-dd7f142e5bd0
   hippo:name: Hippo Cool
   hippostd:foldertype: [new-image-folder]
   hippostd:gallerytype: ['hippogallery:imageset']
-

@@ -8,3 +8,9 @@ definitions:
         hst:iconpath: images/essentials/catalog-component-icons/simple-content.svg
         hst:label: Simple Content
         hst:template: contentpage-main
+      /herobanner:
+        jcr:primaryType: hst:containeritemcomponent
+        hst:componentclassname: org.example.components.HeroBanner
+        hst:iconpath: images/essentials/catalog-component-icons/simple-content.svg
+        hst:label: Hero banner
+        hst:template: hero-banner

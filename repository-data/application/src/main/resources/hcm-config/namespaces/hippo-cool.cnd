@@ -10,3 +10,6 @@
 [hippocool:contentdocument] > hippocool:basedocument, hippostd:relaxed, hippotranslation:translated
   orderable
 
+[hippocool:herobanner] > hippocool:basedocument, hippostd:relaxed, hippotranslation:translated
+  orderable
+

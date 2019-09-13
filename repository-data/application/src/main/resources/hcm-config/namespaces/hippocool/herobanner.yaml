@@ -1,17 +1,17 @@
 definitions:
   config:
-    /hippo:namespaces/hippocool/contentdocument:
+    /hippo:namespaces/hippocool/herobanner:
       jcr:primaryType: hipposysedit:templatetype
       jcr:mixinTypes: ['editor:editable', 'mix:referenceable']
-      jcr:uuid: 93fd8ceb-3b16-45b5-a0b8-4c275cd54d63
+      jcr:uuid: 62c468f7-f0f9-4d15-9909-20409ee57551
       /hipposysedit:nodetype:
         jcr:primaryType: hippo:handle
         jcr:mixinTypes: ['mix:referenceable']
-        jcr:uuid: af177b20-15f2-4048-99ac-24d11d0670d4
+        jcr:uuid: be74ec09-1823-406d-9d93-17c9be77f76c
         /hipposysedit:nodetype:
           jcr:primaryType: hipposysedit:nodetype
-          jcr:mixinTypes: ['hipposysedit:remodel', 'mix:referenceable']
-          jcr:uuid: 60831785-7edc-4ce8-8baf-33a6401f6f63
+          jcr:mixinTypes: ['mix:referenceable', 'hipposysedit:remodel']
+          jcr:uuid: 4f10110d-2f31-4894-b92e-51fb4a7fbd05
           hipposysedit:node: true
           hipposysedit:supertype: ['hippocool:basedocument', 'hippostd:relaxed', 'hippotranslation:translated']
           hipposysedit:uri: http://www.hippocool.com/hippocool/nt/1.0
@@ -23,14 +23,6 @@ definitions:
             hipposysedit:path: hippocool:title
             hipposysedit:primary: false
             hipposysedit:type: String
-          /introduction:
-            jcr:primaryType: hipposysedit:field
-            hipposysedit:mandatory: false
-            hipposysedit:multiple: false
-            hipposysedit:ordered: false
-            hipposysedit:path: hippocool:introduction
-            hipposysedit:primary: false
-            hipposysedit:type: Text
           /content:
             jcr:primaryType: hipposysedit:field
             hipposysedit:mandatory: false
@@ -38,36 +30,48 @@ definitions:
             hipposysedit:ordered: false
             hipposysedit:path: hippocool:content
             hipposysedit:primary: false
-            hipposysedit:type: hippostd:html
-          /publicationdate:
+            hipposysedit:type: Html
+          /image:
             jcr:primaryType: hipposysedit:field
             hipposysedit:mandatory: false
             hipposysedit:multiple: false
             hipposysedit:ordered: false
-            hipposysedit:path: hippocool:publicationdate
+            hipposysedit:path: hippocool:image
             hipposysedit:primary: false
-            hipposysedit:type: Date
+            hipposysedit:type: hippogallerypicker:imagelink
+          /link:
+            jcr:primaryType: hipposysedit:field
+            hipposysedit:mandatory: false
+            hipposysedit:multiple: false
+            hipposysedit:ordered: false
+            hipposysedit:path: hippocool:link
+            hipposysedit:primary: false
+            hipposysedit:type: hippo:mirror
       /hipposysedit:prototypes:
         jcr:primaryType: hipposysedit:prototypeset
         /hipposysedit:prototype:
-          jcr:primaryType: hippocool:contentdocument
-          jcr:mixinTypes: ['mix:referenceable']
-          jcr:uuid: f641e37f-c388-4c7c-a53c-8729b96ddf89
-          hippo:related___pathreference: []
-          hippocool:introduction: ''
-          hippocool:publicationdate: 0001-01-01T13:00:00+01:00
-          hippocool:title: ''
+          jcr:primaryType: hippocool:herobanner
           hippostd:holder: holder
           hippostd:state: draft
           hippostdpubwf:createdBy: ''
-          hippostdpubwf:creationDate: 2014-03-25T10:56:00+01:00
-          hippostdpubwf:lastModificationDate: 2014-03-25T10:56:00+01:00
           hippostdpubwf:lastModifiedBy: ''
           hippotranslation:id: document-type-locale-id
           hippotranslation:locale: document-type-locale
-          /hippocool:content:
-            jcr:primaryType: hippostd:html
-            hippostd:content: <html><body></body></html>
+          jcr:mixinTypes: ['mix:referenceable']
+          hippocool:title: ''
+          hippocool:content: ''
+          jcr:uuid: e89536b4-eab9-43ca-8e72-42c6b6418c14
+          hippostdpubwf:lastModificationDate: 2019-09-13T13:15:52.531+05:30
+          hippostdpubwf:creationDate: 2019-09-13T13:15:52.532+05:30
+          /hippocool:image:
+            jcr:primaryType: hippogallerypicker:imagelink
+            hippo:docbase: cafebabe-cafe-babe-cafe-babecafebabe
+            hippo:facets: []
+            hippo:modes: []
+            hippo:values: []
+          /hippocool:link:
+            jcr:primaryType: hippo:mirror
+            hippo:docbase: cafebabe-cafe-babe-cafe-babecafebabe
       /editor:templates:
         jcr:primaryType: editor:templateset
         /_default_:
@@ -75,48 +79,39 @@ definitions:
           frontend:properties: [mode]
           frontend:references: [wicket.model, model.compareTo, engine, validator.id]
           frontend:services: [wicket.id, validator.id]
-          type: hippocool:contentdocument
           /root:
             jcr:primaryType: frontend:plugin
-            extension.left: ${cluster.id}.left
-            extension.right: ${cluster.id}.right
-            plugin.class: org.hippoecm.frontend.editor.layout.TwoColumn
-            wicket.extensions: [extension.left, extension.right]
-          /left:
-            jcr:primaryType: frontend:plugin
-            item: ${cluster.id}.left.item
+            item: ${cluster.id}.field
             plugin.class: org.hippoecm.frontend.service.render.ListViewPlugin
-            wicket.id: ${cluster.id}.left
-          /right:
-            jcr:primaryType: frontend:plugin
-            item: ${cluster.id}.right.item
-            plugin.class: org.hippoecm.frontend.service.render.ListViewPlugin
-            wicket.id: ${cluster.id}.right
           /title:
             jcr:primaryType: frontend:plugin
+            caption: Title
             field: title
             plugin.class: org.hippoecm.frontend.editor.plugins.field.PropertyFieldPlugin
-            wicket.id: ${cluster.id}.left.item
-            /cluster.options:
-              jcr:primaryType: frontend:pluginconfig
-          /introduction:
-            jcr:primaryType: frontend:plugin
-            field: introduction
-            plugin.class: org.hippoecm.frontend.editor.plugins.field.PropertyFieldPlugin
-            wicket.id: ${cluster.id}.left.item
+            wicket.id: ${cluster.id}.field
             /cluster.options:
               jcr:primaryType: frontend:pluginconfig
           /content:
             jcr:primaryType: frontend:plugin
+            caption: Content
             field: content
-            plugin.class: org.hippoecm.frontend.editor.plugins.field.NodeFieldPlugin
-            wicket.id: ${cluster.id}.left.item
+            plugin.class: org.hippoecm.frontend.editor.plugins.field.PropertyFieldPlugin
+            wicket.id: ${cluster.id}.field
             /cluster.options:
               jcr:primaryType: frontend:pluginconfig
-          /publicationdate:
+          /image:
             jcr:primaryType: frontend:plugin
-            field: publicationdate
-            plugin.class: org.hippoecm.frontend.editor.plugins.field.PropertyFieldPlugin
-            wicket.id: ${cluster.id}.right.item
+            caption: Image
+            field: image
+            plugin.class: org.hippoecm.frontend.editor.plugins.field.NodeFieldPlugin
+            wicket.id: ${cluster.id}.field
+            /cluster.options:
+              jcr:primaryType: frontend:pluginconfig
+          /link:
+            jcr:primaryType: frontend:plugin
+            caption: Link
+            field: link
+            plugin.class: org.hippoecm.frontend.editor.plugins.field.NodeFieldPlugin
+            wicket.id: ${cluster.id}.field
             /cluster.options:
               jcr:primaryType: frontend:pluginconfig
